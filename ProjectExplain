@@ -1,0 +1,65 @@
+First choose from menu what yoou want to do :
+  1-to create database
+	    1.take the root user MySQL password
+	    2.enter name of database you want create 
+	    3.take the root user MySQL password and then create database.
+	    
+	    
+	    
+    2-to show all database and print it on screen and store in file "project/database"
+    	    1.take the root user MySQL password and then show database.
+    	    
+	    
+	    
+  3-to connect the specefic database 
+            1.read databse you want to connect and then open new menu 
+               1-read table and define 2 arrays
+		2-ask about number of column you want to add
+		3- read name of column and datatype
+		4-if data type is primary key  add all column if data typy not primary key not add any column
+		5- how to add al column?
+		6-add primary key name and datatype in ARRAY and add datatype in dataarr
+		7-for loop, loop num of column -1 to ask about name of column and datatype 
+		8-add  name of column  and datatype in ARRAY and add datatype in dataarr
+		9- after for loop finish add array in data and create table take tablename and data 
+				
+                
+  		2-to show all tables and print it on screen and store in file "project/tables"
+  		
+  		
+  		3-to insert into table 
+  		    1.read table name and data want to insert but between () and then enter root user MySQL password and insert data 
+  		    
+  		
+  		4-to select from tables and print it on screen and store in file "project/tabledata"
+  		    1.read table name and then enter root user MySQL password and selected 
+  		    
+  		    
+  		5-to drop table 
+  		    1.read table name and then enter root user MySQL password and dropped
+  		    
+  		    
+                6-to delete row from table 
+                    1.read table and row then enter root user MySQL password and delete the row 
+                    
+                    
+                7-to update table to new value 
+                    1.read table name ,column, newvalue and the where condition and then enter root user MySQL password and delete the row and then update the table
+                    
+                    
+                8-write exit to exit the project 
+                
+                9-echo not found if it not found 
+  
+  	    
+ 
+    	    
+    	    
+  4-to drop database
+            1. read database you want to drop and then take the root user MySQL password and then dropped the database.
+            
+            
+  5-write exit to exit the project 
+  
+  
+  6-echo not found if it not found 

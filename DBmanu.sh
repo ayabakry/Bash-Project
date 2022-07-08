@@ -18,11 +18,11 @@ do
                2) mysql -uroot -p${rootpasswd} -e "SHOW DATABASES \G"| tee project/database
                       ;;
                3) echo "Enter database name!"
-               PS3='"Press 1 to CREATE Table"			"Press 2 to SHOW Table"
-"Press 3 To insert inTable"			"Press 4 To Select Table"
-"Press 5 To Drop Table"			        "Press 6 To delete from Table"  
-"Press 7 To Update Table"		        "Press exit to exit menu" 
-?'  
+               PS3='   "Press 1 to CREATE Table"		        "Press 2 to SHOW Table"
+			"Press 3 To insert inTable"			"Press 4 To Select Table"
+			"Press 5 To Drop Table"			"Press 6 To delete from Table"  
+			"Press 7 To Update Table"		        "Press exit to exit menu" 
+		?'  
                   read DBname;
                  select cmd in ""
 			do
@@ -82,7 +82,7 @@ do
 				      ;;
 				      
 				      
-				4) echo  "insert Table Name to select data"
+				4) echo  "Enter Table Name to select data"
 					read Tablename      
 					mysql -uroot -p${rootpasswd} -D${DBname}  -e"SELECT * FROM ${Tablename}\G"| tee project/tabledata
 					echo "select is  successfully"
@@ -90,14 +90,14 @@ do
 						
 						
 						
-				5) echo  "insert Table Name to drop table"
+				5) echo  "Enter Table Name to drop table"
 					read Tablename      
 					mysql -uroot -p${rootpasswd} -D${DBname}  -e "DROP TABLE IF EXISTS ${Tablename};"
 						;;
 						
 						
 						
-				6)  echo  "enter tablename  you want to delete"
+				6)  echo  "Enter tablename you want to delete from "
 					read Tablename
 					 echo  "enter  condition row you want to delete"
 					read rowdelete
@@ -107,7 +107,7 @@ do
 						
 						
 						
-				7)  echo  "insert tablename"
+				7)  echo  "Enter tablename you want to update "
 					read Tablename
 				echo  "enter columnname"
 					read columnname
